@@ -6,31 +6,21 @@
 a {
   text-decoration: none;
 }
+.mg-left {
+  margin-left: 1em;
+}
+/* MAIN */
 main {
   height: calc(100vh - 70px);
+  width: auto;
+  display: flex;
   /* test */
-  background-color: aqua;
+  background-color: aquamarine;
 }
-/* SIDE BAR */
-.sidebar {
-  height: 100%;
-  width: 15%;
-  float: left;
-  /* test */
-  background-color: black;
-}
-.logo img {
-  width: 8em;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
-}
-/* SIDE BAR */
-
 /* UPGRADE BAR */
 .upgrade-bar {
-  height: 10%;
   width: 85%;
-  float: right;
+  height: 60px;
 
   /* test */
   background-color: yellowgreen;
@@ -38,21 +28,59 @@ main {
 .btn-upgrade {
   padding: 0.5em 1em;
   border-radius: 50px;
-  float: right;
   color: white;
   border: 1px solid white;
-  margin-top: 0.3em;
-}
-/* /UPGRADE BAR */
-.main-container {
-  height: 90%;
-  width: 85%;
   float: right;
-  /* test */
-  background-color: tomato;
+  margin-top: 0.5em;
 }
+/* UPGRADE BAR */
+/* SIDE BAR */
+.sidebar {
+  width: 15%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+}
+.logo {
+  align-self: flex-start;
+  margin-bottom: 0.5em;
+}
+.logo img {
+  width: 8em;
+}
+.icon {
+  margin-top: 0.5em;
+  display: flex;
+}
+.icon img {
+  width: 2em;
+}
+.text {
+  color: gray;
+  margin-left: 0.5em;
+  align-self: center;
+}
+.playlist {
+  margin-top: 1em;
+}
+
+/* /SIDE BAR */
+.user {
+  width: 15%;
+  height: 80px;
+  align-self: flex-end;
+  position: fixed;
+  /* test */
+  background-color: brown;
+}
+/* /MAIN */
+
+/* FOOTER */
 footer {
   height: 70px;
+  width: 100%;
   /* test */
-  background-color: blue;
+  background-color: aqua;
 }
+/* /FOOTER */
