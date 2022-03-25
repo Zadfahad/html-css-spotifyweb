@@ -4,60 +4,216 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotifyweb</title>
+    <title>Document</title>
+
+    <!-- fonts-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS LINK -->
+
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- fonts -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- /fonts -->
   </head>
   <body>
-    <!-- MAIN -->
-    <main>
-      <div class="sidebar ">
-        <div class="logo mg-left">
-          <img src="img/logo.svg" alt="logo di spotify" />
-        </div>
-        <div class="icon mg-left">
-            <img src="img/home.svg" alt="home icon">
-            <p class="text">Home</p>
-        </div>
+    <div class="container">
+      <main class="clearfix">
+        <nav class="sidebar">
+          <div class="sidebar-top">
+            <!-- LOGO -->
+            <div class="logo">
+              <img src="img/logo.svg" alt="logo di spotify" />
+            </div>
+            <!-- logo mobile -->
+            <div class="logo-mobile">
+              <img src="img/logo-small.svg" alt="logo di spotify" />
+            </div>
+            <!-- MENU -->
+            <div class="menu">
+              <ul class="list-menu">
+                <li>
+                  <a href="" class="active">
+                    <img src="img/home.svg" alt="home icon" />
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/search.svg" alt="serach icon" />
+                    <span>Cerca</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/libreria.svg" alt="libreria icon" />
+                    <span>La tua libreria</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- /MENU -->
 
-        <div class="icon mg-left">
-            <img src="img/search.svg" alt="home icon">
-            <p class="text">Home</p>
+            <!-- PLAYLIST -->
+            <div class="playlist">
+              <h2>Playlist</h2>
+              <a class="add-playlist">
+                <span class="add-playlist-btn">+</span>
+                <span href="">Crea Playlist</span>
+              </a>
+              <ul class="list-menu">
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>
+              </ul>
+            </div>
+            <!-- PLAYLIST -->
+          </div>
+          <div class="sidebar-bottom">
+            <div class="install-app">
+              <a href="">
+                <img src="img/download.svg" alt="insatll app" />
+                <span>Installa app</span>
+              </a>
+            </div>
+            <div class="user-profile">
+              <div class="user-profile-icon">
+                <img src="img/profile.svg" alt="profile image" />
+              </div>
+              <h3>John doe</h3>
+            </div>
+          </div>
+        </nav>
+        <section class="content">
+          <div class="navbar">
+            <div class="upgrade-btn"><a href="">Effettua l upgrade</a></div>
+          </div>
+          <div class="options">
+            <ul class="list-menu">
+              <li><a href="" class="active1">IN EVIDENZA</a></li>
+              <li><a href="">PODCAST</a></li>
+              <li><a href="">CLASSIFICHE</a></li>
+              <li><a href="">GENERI EMODI</a></li>
+              <li><a href="">NUOVE USCITE</a></li>
+              <li><a href="">SCOPRI</a></li>
+            </ul>
+          </div>
+          <div class="albums-row">
+            <div class="album-item">
+              <img src="img/metal_lifting.jpg" alt="" />
+            </div>
+            <div class="album-item">
+              <img src="img/stranger.jpeg" alt="" />
+            </div>
+            <div class="album-item">
+              <img src="img/aquietplace.jpeg" alt="" />
+            </div>
+            <div class="album-item">
+              <img src="img/split.jpeg" alt="" />
+            </div>
+            <div class="album-item">
+              <img src="img/cure.jpeg" alt="" />
+            </div>
+            <div class="album-item">
+              <img src="img/sinister.jpeg" alt="" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="player">
+          <!-- ALBUMS -->
+          <div class="album">
+            <div class="album-cover">
+              <img src="img/sinister.jpeg" alt="" />
+            </div>
+            <div class="album-title">
+              <h4>
+                <a href="">Sinister</a>
+              </h4>
+              <p>
+                <a href="">Brano nome</a>
+              </p>
+            </div>
+            <div class="album-icons">
+              <a href="">
+                <i class="far fa-heart"></i>
+              </a>
+              <a href="">
+                <i class="far fa-folder"></i>
+              </a>
+            </div>
+          </div>
+          <!-- /ALBUMS -->
+
+          <!-- CONTROLS -->
+          <div class="controls">
+            <div class="control-btn">
+              <ul class="list-menu">
+                <li>
+                  <i class="fas fa-random"></i>
+                </li>
+                <li>
+                  <i class="fas fa-step-backward"></i>
+                </li>
+                <li class="play-btn">
+                  <i class="far fa-play-circle"></i>
+                </li>
+                <li>
+                  <i class="fas fa-step-forward"></i>
+                </li>
+                <li>
+                  <i class="fas fa-redo-alt"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="control-time">
+              <div class="control-time-min">0:25</div>
+              <div class="control-bar">
+                <div class="control-bar-overlay">
+                  <div class="control-bar-circle"></div>
+                </div>
+              </div>
+              <div class="control-time-min">4:30</div>
+            </div>
+          </div>
+          <!-- /CONTROLS -->
+
+          <!-- AUDIO -->
+          <div class="audio">
+            <ul class="list-menu">
+              <li>
+                <i class="fas fa-list-ul"></i>
+              </li>
+              <li>
+                <i class="fas fa-desktop"></i>
+              </li>
+              <li class="audio-control">
+                <i class="fas fa-volume-up"></i>
+                <div class="control-bar">
+                  <div class="control-bar-overlay">
+                    <div class="control-bar-circle"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--/AUDIO -->
         </div>
-
-        <div class="icon mg-left">
-            <img src="img/libreria.svg" alt="home icon">
-            <p class="text">Home</p>
-        </div>
-        <h3 class="playlist mg-left">Playlist</h3>
-
-        <div class="playlist-icon mg-left">
-            
-            <p class="text">Home</p>
-        </div>
-
-       
-        </div>
-        <div class="user"></div>
-      </div>
-
-      <!-- UPGRADE BAR -->
-      <div class="upgrade-bar">
-        <a href="" class="btn-upgrade">Effettua l upgrade</a>
-      </div>
-      <!-- /UPGRADE BAR -->
-
-      <div class="main-container"></div>
-    </main>
-    <!-- /MAIN -->
-    <!-- FOOTER -->
-    <footer></footer>
-    <!-- /FOOTER -->
+      </footer>
+    </div>
   </body>
 </html>
